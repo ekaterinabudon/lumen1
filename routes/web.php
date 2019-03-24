@@ -17,4 +17,7 @@ $router->get('/', function () use ($router) {
 $router->get('/hello', function () use ($router) {
     return '<h1>Hello!</h1>';
 });
+$router->get('/sum/{n1}/{n2}', function ($n1, $n2) {
+    return '<h1>Сумма:</h1><h2>' . ($n1+$n2) . '</h2>';
+});
 
